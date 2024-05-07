@@ -7,6 +7,7 @@ import { UseWrapper } from './UseWrapper'
 import { Ref } from './Ref'
 import { NameContext, NameContextChild } from './Context'
 import { CleanupFunctionForRefs } from './CleanupFunctionForRefs'
+import { Meta } from './Meta'
 
 function App() {
 
@@ -57,6 +58,11 @@ function App() {
       <div>
         <h2>Cleanup functions for refs</h2>
         <CleanupFunctionForRefs />
+      </div>
+
+      <div>
+        <h2>Meta</h2>
+        <Meta />
       </div>
     </div>
   )
