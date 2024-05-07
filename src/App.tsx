@@ -6,6 +6,7 @@ import { Optimistic } from './Optimitic'
 import { UseWrapper } from './UseWrapper'
 import { Ref } from './Ref'
 import { NameContext, NameContextChild } from './Context'
+import { CleanupFunctionForRefs } from './CleanupFunctionForRefs'
 
 function App() {
 
@@ -51,6 +52,11 @@ function App() {
         <NameContext value="Alice">
           <NameContextChild />
         </NameContext>
+      </div>
+
+      <div>
+        <h2>Cleanup functions for refs</h2>
+        <CleanupFunctionForRefs />
       </div>
     </div>
   )
