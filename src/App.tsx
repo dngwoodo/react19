@@ -2,6 +2,7 @@ import { AfterAction } from './AfterAction'
 import { ActionState } from './ActionState'
 import { BeforeAction } from './BeforeAction'
 import { FormStatus } from './FormStatus'
+import { Optimistic } from './Optimitic'
 
 function App() {
 
@@ -25,6 +26,11 @@ function App() {
       <div>
         <h2>Form Status</h2>
         <FormStatus />
+      </div>
+
+      <div>
+        <h2>Optimistic</h2>
+        <Optimistic />
       </div>
     </div>
   )
