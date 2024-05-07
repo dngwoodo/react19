@@ -4,6 +4,7 @@ import { BeforeAction } from './BeforeAction'
 import { FormStatus } from './FormStatus'
 import { Optimistic } from './Optimitic'
 import { UseWrapper } from './UseWrapper'
+import { Ref } from './Ref'
 
 function App() {
 
@@ -37,6 +38,11 @@ function App() {
       <div>
         <h2>Use</h2>
         <UseWrapper />
+      </div>
+
+      <div>
+        <h2>Ref</h2>
+        <Ref />
       </div>
     </div>
   )
