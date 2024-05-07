@@ -22,6 +22,7 @@ export function BeforeAction() {
 
   return (
     <div>
+      {isPending && <p>Loading...</p>}
       <input value={name} onChange={(event) => setName(event.target.value)} />
       <button onClick={handleSubmit} disabled={isPending}>
         Update
