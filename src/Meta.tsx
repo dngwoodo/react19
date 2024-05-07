@@ -13,7 +13,7 @@ export function Meta() {
    */
   return (
     <article>
-    <h1>{post.title}</h1>
+    <h4>{post.title}</h4>
     <title>{post.title}</title>
     <meta name="author" content="Josh" />
     <link rel="author" href="https://twitter.com/joshcstory/" />

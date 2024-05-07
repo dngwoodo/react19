@@ -8,6 +8,7 @@ import { Ref } from './Ref'
 import { NameContext, NameContextChild } from './Context'
 import { CleanupFunctionForRefs } from './CleanupFunctionForRefs'
 import { Meta } from './Meta'
+import { StyleSheets } from './StyleSheets'
 
 function App() {
 
@@ -63,6 +64,11 @@ function App() {
       <div>
         <h2>Meta</h2>
         <Meta />
+      </div>
+
+      <div>
+        <h2>Stylesheets</h2>
+        <StyleSheets />
       </div>
     </div>
   )
