@@ -1,6 +1,7 @@
 import { AfterAction } from './AfterAction'
 import { ActionState } from './ActionState'
 import { BeforeAction } from './BeforeAction'
+import { FormStatus } from './FormStatus'
 
 function App() {
 
@@ -19,6 +20,11 @@ function App() {
       <div>
         <h2>Action State</h2>
         <ActionState />
+      </div>
+
+      <div>
+        <h2>Form Status</h2>
+        <FormStatus />
       </div>
     </div>
   )
