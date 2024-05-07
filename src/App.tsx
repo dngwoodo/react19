@@ -5,6 +5,7 @@ import { FormStatus } from './FormStatus'
 import { Optimistic } from './Optimitic'
 import { UseWrapper } from './UseWrapper'
 import { Ref } from './Ref'
+import { NameContext, NameContextChild } from './Context'
 
 function App() {
 
@@ -43,6 +44,13 @@ function App() {
       <div>
         <h2>Ref</h2>
         <Ref />
+      </div>
+
+      <div>
+        <h2>Context</h2>
+        <NameContext value="Alice">
+          <NameContextChild />
+        </NameContext>
       </div>
     </div>
   )
