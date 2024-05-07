@@ -9,3 +9,8 @@ export async function updateName(name: string) {
 
   return await response.json();
 }
+
+export async function getNames() {
+  const response = await fetch("http://localhost:5173/api/v1/name");
+  return await response.json();
+}

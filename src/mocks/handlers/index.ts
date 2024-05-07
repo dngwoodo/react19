@@ -16,4 +16,25 @@ export const handlers = [
       });
     }
   ),
+
+  http.get('http://localhost:5173/api/v1/name', async () =>
+    {
+      await delay(2000);
+
+      return HttpResponse.json([
+        {
+          id: 1,
+          name: 'Alice',
+        },
+        {
+          id: 2,
+          name: 'Bob',
+        },
+        {
+          id: 3,
+          name: 'Charlie',
+        }
+    ]);
+    }
+  ),
 ];
