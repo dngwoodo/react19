@@ -13,8 +13,8 @@ export function Optimistic() {
     optimisticNames, 
     setOptimisticName
   ] = useOptimistic(
-    names, 
-    (currentName, optimisticName: string) => ([
+    names, // 기본 값
+    (currentName, optimisticName: string) => ([ // set 했을 때 실행되는 함수
       ...currentName,
       optimisticName
     ])

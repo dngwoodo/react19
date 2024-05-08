@@ -9,6 +9,8 @@ import { NameContext, NameContextChild } from './Context'
 import { CleanupFunctionForRefs } from './CleanupFunctionForRefs'
 import { Meta } from './Meta'
 import { StyleSheets } from './StyleSheets'
+import { Transition } from './18/TTransition'
+import { DeferredValue } from './18/DeferredValue'
 
 function App() {
 
@@ -17,6 +19,16 @@ function App() {
       <div>
         <h2>Before Action</h2>
         <BeforeAction />
+      </div>
+
+      <div>
+        <h2>Transition</h2>
+        <Transition />
+      </div>
+
+      <div>
+        <h2>DeferredValue</h2>
+        <DeferredValue />
       </div>
 
       <div>
